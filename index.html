@@ -262,6 +262,46 @@
     <footer>
         <p>© 2019 Digital Project. Все права защищены.</p>
     </footer>
+    <div class="modal">
+		<div class="modal__block">
+            <div class="modal-title">
+                <p>Задать вопрос</p>
+                <button class="modal-close-btn">
+                    <img src="img/cross.png" alt="">
+                </button>
+            </div>
+			<div class="modal-main-part">
+                <div class="modal-inputs">
+                    <form action="">
+                        <input type="text" class="name" placeholder="Имя">
+                        <input type="tel"  required class="name" placeholder="Номер телефона">
+                        <input type="text" required class="name" placeholder="E-mail">
+                        <div class="select" tabindex="1">
+                            <input class="selectopt" name="test" type="radio" id="opt1" checked>
+                            <label for="opt1" class="option">Интересующий товар/услуга</label>
+                            <input class="selectopt" name="test" type="radio" id="opt2">
+                            <label for="opt2" class="option">Интересующий товар/услуга1</label>
+                            <input class="selectopt" name="test" type="radio" id="opt3">
+                            <label for="opt3" class="option">Интересующий товар/услуга2</label>
+                            <input class="selectopt" name="test" type="radio" id="opt4">
+                            <label for="opt4" class="option">Интересующий товар/услуга3</label>
+                            <input class="selectopt" name="test" type="radio" id="opt5">
+                            <label for="opt5" class="option">Интересующий товар/услуга4</label>
+                          </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение*"></textarea>
+                        <label for="check" class="checkbox-item">
+                            <input type="checkbox" name="check" >
+                            <p class="pre-check" for="check">Отправляя заявку Вы соглашаетес с политикой конфиденциальности</p>
+                        </label>
+                            <button class="modal-submit-btn">
+                                ОТПРАВИТЬ
+                            </button>
+                    </form>
+                </div>
+            </div>
+		</div>
+	</div>
+    <script src="js/modal.js"></script>
     <script src="js/js.js"></script>
 </body>
 </html>

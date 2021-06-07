@@ -7,18 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       const close = document.querySelector(".modal-close-btn");
       const modal = document.querySelector(".modal");
-      const cardDetailsTitle = document.querySelector(".card-details__title");
-      const modalTitle = modal.querySelector(".modal__title");
-      const modalSubTitle = modal.querySelector(".modal__subtitle");
-      const modalTitleSubmit = modal.querySelector(".modal__title-submit");
   
-      const openModal = (e) => {
-        const target = e.target;
+      const openModal = () => {
         modal.classList.add("open");
         document.addEventListener("keydown", escapeHandler);
-        modalTitle.textContent = cardDetailsTitle.textContent;
-        modalTitleSubmit.value = cardDetailsTitle.textContent;
-        modalSubTitle.textContent = target.dataset.buttonBuy;
       };
   
       const closeModal = () => {

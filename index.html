@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,11 +19,11 @@
         <div class="wrapper">
             <nav>
                 <ul>
-                    <li>Главная</li>
-                    <li>Галерея</li>
-                    <li>Проекты</li>
-                    <li>Сертификаты</li>
-                    <li>Контакты</li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#About">Галерея</a></li>
+                    <li><a href="#Projects">Проекты</a></li>
+                    <li><a href="#Tasks">Сертификаты</a></li>
+                    <li><a href="#Contact">Контакты</a></li>
                 </ul>
             </nav>
             <div class="link">
@@ -73,12 +74,10 @@
     <!-- Menu -->
     <section class="Main">
         <div class="main-left-part">
-
             <div class="main-text">
                 <p class="project">PROJECT</p>
                 <p class="nurtown">NURTOWN</p>
             </div>
-
             <div class="main-carousel-btns">
                 <button class="btn-prev material-icons">&#xe5c4</button>
                 <button class="btn-next material-icons">&#xe5c8</button>
@@ -114,7 +113,7 @@
 
         </div>
     </section>
-    <section class="About">
+    <section class="About" id="About">
         <div class="about-main-item">
             <div class="about-photo">
                 <img src="img/Rectangle 9.png" alt="">
@@ -128,7 +127,7 @@
             </div>
         </div>
     </section>
-    <section class="Tasks">
+    <section class="Tasks" id="Tasks">
         <h2 class="name-of-section">Основные задачи</h2>
         <div class="wrapper-tasks">
             <div class="tasks-block">
@@ -141,7 +140,7 @@
             </div>
         </div>
     </section>
-    <section class="Projects">
+    <section class="Projects" id="Projects">
         <h2 class="name-of-section">Наши проекты</h2>
         <div class="projects-wrapper">
             <div class="project-item">
@@ -228,7 +227,7 @@
             <button class="project-btn">Все проекты <span>🠒</span></button>
         </div>
     </section>
-    <section class="Contact">
+    <section class="Contact" id="Contact">
         <h2 class="name-of-section">Связаться с нами</h2>
         <div class="contact-wrapper">
             <div class="contact-left-part">
@@ -251,7 +250,12 @@
                           </div>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение*"></textarea>
                         <label for="check" class="checkbox-item">
-                            <input type="checkbox" name="check" >
+                            <div class="control-group">
+                                <label class="control control-checkbox">
+                                        <input type="checkbox" checked="checked" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </div>
                             <p class="pre-check" for="check">Отправляя заявку Вы соглашаетес с политикой конфиденциальности</p>
                         </label>
                             <button class="contact-submit-btn">
@@ -302,6 +306,7 @@
     <footer>
         <p>© 2019 Digital Project. Все права защищены.</p>
     </footer>
+    <!-- Modal -->
     <div class="modal">
 		<div class="modal__block">
             <div class="modal-title">
@@ -330,7 +335,12 @@
                           </div>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение*"></textarea>
                         <label for="check" class="checkbox-item">
-                            <input type="checkbox" name="check" >
+                            <div class="control-group">
+                                <label class="control control-checkbox">
+                                        <input type="checkbox" checked="checked" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </div>
                             <p class="pre-check" for="check">Отправляя заявку Вы соглашаетес с политикой конфиденциальности</p>
                         </label>
                             <button class="modal-submit-btn">

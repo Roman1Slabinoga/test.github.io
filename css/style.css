@@ -141,12 +141,15 @@ header .wrapper .link .header_btn {
 .Main {
   font-family: font1;
   width: 80%;
-  height: 85vh;
+  height: auto;
   margin: 0 auto;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -409,7 +412,7 @@ header .wrapper .link .header_btn {
 
 .Tasks {
   width: 80%;
-  height: 470px;
+  height: auto;
   margin: 0 auto;
   margin-top: 120px;
   font-family: font1;
@@ -483,6 +486,7 @@ header .wrapper .link .header_btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .Projects .projects-wrapper {
@@ -619,7 +623,7 @@ header .wrapper .link .header_btn {
 
 .Contact {
   width: 80%;
-  height: 800px;
+  height: auto;
   margin-top: 120px;
   margin: 0 auto;
 }
@@ -1208,5 +1212,282 @@ footer {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1445px) {
+  .Projects .projects-wrapper .project-item {
+    width: 330px;
+  }
+  .Projects .projects-wrapper .project-item img, .Projects .projects-wrapper .project-item .overlay {
+    width: 100%;
+    height: 100%;
+  }
+  .Projects .projects-wrapper .project-item .overlay .overlay-info a div {
+    width: 90%;
+    height: 100%;
+  }
+  .Contact {
+    overflow: hidden;
+  }
+  .Contact .contact-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .Contact .contact-wrapper .contact-right-part {
+    width: 750px;
+  }
+  .Contact .contact-wrapper .contact-left-part {
+    width: 390px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .Main .main-left-part .main-text .project,
+  .Main .main-left-part .main-text .nurtown {
+    font-size: 50px;
+  }
+  .name-of-section {
+    font-size: 50px;
+  }
+  .About .about-main-item .about-photo {
+    height: 100%;
+  }
+  .About .about-main-item .about-photo img {
+    width: 100%;
+    height: 100%;
+  }
+  .About .about-main-item .about-info .about-info-wrapper p {
+    font-size: 14px;
+  }
+  .Tasks .wrapper-tasks .tasks-block p {
+    font-size: 18px;
+  }
+  .Tasks .wrapper-tasks .tasks-block .number {
+    font-size: 140px;
+  }
+}
+
+@media (max-width: 1300px) {
+  main-look-btn,
+  .Contact .contact-wrapper .contact-left-part .contant-inputs form .contact-submit-btn,
+  .Projects .project-btn-wrapper .project-btn,
+  .About .about-main-item .about-info .about-info-wrapper .about-btn {
+    width: 190px;
+    height: 50px;
+    font-size: 10px;
+  }
+  .Main .main-right-part .slider-container .slider-track .slider-item .block img {
+    width: 100%;
+    height: 100%;
+  }
+  .Main .main-right-part,
+  .Main .main-right-part .slider-container,
+  .Main .main-right-part .slider-container .slider-track {
+    height: 100%;
+  }
+  .Main .main-right-part .slider-container {
+    width: 560px;
+  }
+  .Projects .projects-wrapper .project-item {
+    width: 280px;
+    height: 210px;
+  }
+  .Main {
+    height: 77vh;
+  }
+  header .wrapper nav ul li {
+    margin-left: 14px;
+    margin-right: 14px;
+    font-size: 15px;
+  }
+  .Projects .projects-wrapper .project-item {
+    width: 288px;
+    height: 230px;
+  }
+  .Contact .contact-wrapper .contact-left-part .contant-inputs form .checkbox-item .pre-check {
+    font-size: 14px;
+  }
+  .Tasks .wrapper-tasks .tasks-block p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1150px) {
+  header .wrapper .link .header_btn {
+    width: 175px;
+  }
+  header .wrapper nav ul li {
+    font-size: 14px;
+  }
+  .Main {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Main .main-left-part {
+    width: 40%;
+  }
+  .Main .main-right-part {
+    width: 60%;
+  }
+  .About .about-main-item .about-info .about-info-wrapper {
+    width: 327px;
+  }
+  .About .about-main-item .about-info .about-info-wrapper p {
+    width: auto;
+  }
+}
+
+@media (max-width: 1105px) {
+  .About .about-main-item {
+    height: auto;
+  }
+  .Projects .projects-wrapper .project-item {
+    width: 45%;
+    height: auto;
+  }
+  .Contact .contact-wrapper .contact-left-part {
+    width: 325px;
+    height: 500px;
+  }
+  .Contact .contact-wrapper .contact-right-part img {
+    width: 100%;
+    height: 370px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Main {
+    height: auto;
+  }
+  .Main .main-left-part .main-text,
+  .Main .main-left-part .main-carousel-btns,
+  .Main .main-left-part .main-carousel-counter {
+    margin-bottom: 30px;
+  }
+  .name-of-section {
+    font-size: 40px;
+  }
+  .Contact .contact-wrapper .contact-left-part .contant-inputs form .name {
+    height: 35px;
+  }
+  .Contact .contact-wrapper .contact-right-part img {
+    height: 338px;
+  }
+  .About .about-main-item .about-info .about-info-wrapper p {
+    font-size: 12px;
+  }
+  .Projects .projects-wrapper .project-item .overlay .overlay-info a div h3 {
+    font-size: 30px;
+  }
+  .Tasks .wrapper-tasks .tasks-block p {
+    line-height: 25px;
+  }
+  .Main .main-left-part .main-text .project, .Main .main-left-part .main-text .nurtown {
+    font-size: 40px;
+  }
+  .Main .main-left-part .main-carousel-counter p {
+    font-size: 20px;
+    width: 30px;
+    color: #BDBDBD;
+  }
+  .Main .main-left-part .main-carousel-counter span {
+    width: 35px;
+  }
+  .Main .main-right-part .slider-container .slider-track .slider-item .block button {
+    width: 190px;
+    height: 50px;
+    font-size: 10px;
+  }
+  .About .about-main-item .about-info .about-info-wrapper {
+    width: 270px;
+  }
+  .Tasks .wrapper-tasks {
+    height: auto;
+  }
+  .Contact .contact-wrapper .contact-right-part img {
+    height: 300px;
+  }
+  .Contact .contact-wrapper .contact-left-part .contant-inputs form textarea {
+    height: 110px;
+  }
+  .Tasks .wrapper-tasks .tasks-block .number {
+    font-size: 120px;
+  }
+  .Tasks .wrapper-tasks .tasks-block p {
+    line-height: 20px;
+    font-size: 13px;
+  }
+  .pre-footer .pre-footer-wrapper .pre-footer-contacts .pre-footer-contacts-wrapper .pre-footer-contact-item p {
+    font-size: 14px;
+  }
+  .pre-footer .pre-footer-wrapper .pre-footer-logo {
+    width: 162px;
+    height: auto;
+  }
+  .pre-footer .pre-footer-wrapper .pre-footer-logo img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-look-btn, .Contact .contact-wrapper .contact-left-part .contant-inputs form .contact-submit-btn, .Projects .project-btn-wrapper .project-btn, .About .about-main-item .about-info .about-info-wrapper .about-btn {
+    width: 160px;
+    height: 40px;
+  }
+  .name-of-section {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    display: none;
+  }
+  .Main .main-right-part .slider-container .slider-track .slider-item .block button {
+    width: 149px;
+    height: 40px;
+    font-size: 10px;
+  }
+  .About .about-main-item {
+    height: 280px;
+  }
+  .Main .main-left-part .main-carousel-btns .btn-prev, .Main .main-left-part .main-carousel-btns .btn-next {
+    width: 40px;
+    height: 40px;
+  }
+  .Main .main-left-part .main-carousel-counter span {
+    width: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .name-of-section {
+    font-size: 30px;
+  }
+  .About .about-main-item .about-info .about-info-wrapper {
+    width: 220px;
+  }
+  .Tasks .wrapper-tasks .tasks-block p {
+    line-height: 18px;
+    font-size: 11px;
+  }
+  .Tasks .wrapper-tasks .tasks-block .number {
+    font-size: 110px;
+  }
+  .Contact .contact-wrapper {
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .Contact .contact-wrapper .contact-left-part {
+    width: 270px;
+  }
+  .Contact .contact-wrapper .contact-left-part .contant-inputs form .checkbox-item .pre-check {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

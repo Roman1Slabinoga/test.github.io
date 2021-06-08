@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "use strict";
   
     const modal = () => {
-      const cardDetailsButtonBuy = document.querySelector(
+      const cardDetailsButtonBuy = document.querySelectorAll(
         ".header_btn"
       );
       const close = document.querySelector(".modal-close-btn");
@@ -34,7 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
   
-      cardDetailsButtonBuy.addEventListener("click", openModal);
+      cardDetailsButtonBuy.forEach(el => {
+        el.addEventListener("click", openModal);
+      })
       close.addEventListener("click", closeModal);
     };
   
